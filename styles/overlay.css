@@ -1,0 +1,88 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  color: #ffffff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+.modal-form {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 55%;
+  height: 52%;
+  background-color: #000000;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+}
+.close-modal-form {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.overlay-form h1 {
+  font-size: 32px;
+  font-weight: 500;
+  text-shadow: 0px 0px 20px #00ff00;
+}
+.overlay-form span {
+  color: #00ff00;
+}
+.overlay-form input {
+  width: 90%;
+  border: 2px solid #00ff00;
+  height: 70px;
+  font-size: 24px;
+  font-weight: 500;
+  background-color: #1a191d;
+  color: #ffffff;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.overlay-form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100px #333333 inset; /* Цвет фона */
+  -webkit-text-fill-color: #ffffff;
+}
+.overlay-form button {
+  background-color: #00ff00;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.overlay-form button:hover {
+  background-color: #00d600;
+}
+.overlay-form textarea {
+  background-color: #1a191d;
+  height: 110px;
+  width: 90%;
+  color: #ffffff;
+  font-size: 24px;
+  border: 2px solid #00ff00;
+  margin: 15px 0px;
+  outline: none;
+  border-radius: 8px;
+  resize: none;
+  overflow: auto;
+  align-items: center;
+}

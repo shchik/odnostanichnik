@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MyProject</title>
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/overlay.css" />
+    <link rel="stylesheet" href="styles/phone.css" />
+  </head>
+  <body>
+    <p class="title" id="start">я интернет, ты интернет, мы интернет</p>
+    <header class="header">
+      <div class="header-container">
+        <div class="left-header-section">
+          <img src="images/green-vector.png" class="green-vector" />
+          <a href="#start">Главная</a>
+          <a href="#stages">Этапы работы</a>
+          <a href="#contacts">Контакты</a>
+          <img src="images/Menu.png" class="menu-image" />
+        </div>
+        <div class="right-header-section">
+          <p class="telephone-number">+375 29 109 20 99</p>
+          <button class="leave-request">Оставить заявку</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="overlay">
+      <div class="modal-form">
+        <button class="close-modal-form">X</button>
+        <form
+          class="overlay-form"
+          onsubmit="event.preventDefault(); sendAjaxRequest();"
+        >
+          <h1><span>Обсудить</span> Ваш проект</h1>
+          <input id="username1" value="Ваше имя" />
+          <input id="phone1" value="Ваш телефон" />
+          <textarea
+            id="message1"
+            value="Ваше сообщение"
+            class="modal-message"
+          ></textarea>
+          <button type="submit">ОТПРАВИТЬ</button>
+          <div id="error-message1" style="color: red; display: none"></div>
+        </form>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="first-block">
+        <canvas id="canvas1" class="canvas"></canvas>
+        <div class="head-box">
+          <div class="head-group">
+            <div class="text-paragraph">
+              <h2 class="question-title">Вы приходите с вопросами:</h2>
+              <ul>
+                <li class="question-text">
+                  Какие услуги вы предоставляете после завершения проекта?
+                </li>
+              </ul>
+            </div>
+            <div class="head-gif">
+              <video
+                src="images/head.MP4"
+                class="head-video"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+          </div>
+          <div class="answers">И получаете ответы...</div>
+        </div>
+      </div>
+
+      <div class="second-block" id="stages">
+        <h1>Этапы работ</h1>
+        <ul class="stages">
+          <li class="one-item">UI | UX Design</li>
+          <li class="one-item">Next js</li>
+          <li class="one-item">Брендинг</li>
+          <li class="one-item">Домен хостинг</li>
+          <li class="one-item">SSl сертификат</li>
+          <li class="one-item">Современное API</li>
+          <li class="one-item">CEO</li>
+          <li class="one-item">Продвижение</li>
+        </ul>
+        <div class="stages-grid"></div>
+      </div>
+
+      <div class="third-block">
+        <div class="third-block-container">
+          <div class="left-choice">
+            <p class="left-choice-text">
+              <span class="red-text">ОСТАВИТЬ ЗАЯВКУ И</span> СДЕЛАТЬ САЙТ
+            </p>
+            <div class="red-rectangle"></div>
+          </div>
+          <div class="right-choice">
+            <p class="right-choice-text">
+              ОСТАТЬСЯ БЕЗ САЙТА.
+              <span class="blue-text">ОБРАТИТЬСЯ ПОЗЖЕ</span>
+            </p>
+            <div class="blue-rectangle"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fourth-block">
+        <h1 class="fourth-block-title">Примеры работ</h1>
+        <div class="fourth-block-examples js-examples"></div>
+        <div class="vectors">
+          <img src="images/vector-left.png" class="vector-image" id="prev" />
+          <img src="images/Vector.png" class="vector-image" id="next" />
+        </div>
+      </div>
+
+      <div class="fifth-block">
+        <canvas id="canvas2" class="canvas2"></canvas>
+        <form
+          class="form-container"
+          onsubmit="event.preventDefault(); sendAjaxRequest();"
+        >
+          <h1 class="fifth-block-title">НАПИСАТЬ НАМ</h1>
+          <div class="black-rectangle"></div>
+          <p class="form-container-info">
+            Погрузись в матрицу - ты интернет, я интернет, мы интернет. Забудь
+            про web 1.0 b 2.0, мы интернет будущего!
+          </p>
+          <div class="field">
+            <label>Ваше имя</label>
+            <input id="username" required />
+          </div>
+          <div class="field">
+            <label>Ваш телефон</label>
+            <input id="phone" required />
+          </div>
+          <div class="field">
+            <label>Ваш вопрос</label>
+            <textarea class="question" id="message" required></textarea>
+          </div>
+          <div id="error-message" style="color: red; display: none"></div>
+          <button type="submit" class="send-button">Отправить</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="foot-container">
+        <div class="one-foot-item">
+          <h1>Про нашу веб-студию</h1>
+          <p>
+            We are a full-service digital agency that helps businesses build a
+            strong online presence through website development, SEO, and digital
+            marketing.
+          </p>
+        </div>
+        <div class="one-foot-item">
+          <h1>Быстрые ссылки</h1>
+          <div class="links">
+            <p>Ссылка 1</p>
+            <p>Ссылка 2</p>
+            <p>Ссылка 3</p>
+            <p>Ссылка 4</p>
+          </div>
+        </div>
+        <div class="one-foot-item">
+          <h1>Наши соц сети</h1>
+          <div class="social">
+            <p>Соц. сеть 1</p>
+            <p>Соц. сеть 2</p>
+            <p>Соц. сеть 3</p>
+            <p>Соц. сеть 4</p>
+            <p>Соц. сеть 5</p>
+          </div>
+        </div>
+      </div>
+      <div class="low-footer">2022 - 2025, @ УНП 693257297</div>
+    </footer>
+
+    <script type="module" src="scripts/renderSecondBlock.js"></script>
+    <script type="module" src="scripts/renderExamples.js"></script>
+    <script type="module" src="scripts/animations/canvas.js"></script>
+    <script src="scripts/animations/scroll.js"></script>
+    <script src="scripts/sendToTelegram.js"></script>
+  </body>
+</html>

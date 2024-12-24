@@ -1,0 +1,382 @@
+@media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .left-header-section a {
+    display: none;
+  }
+
+  .green-vector {
+    display: none;
+  }
+
+  .telephone-number {
+    display: none;
+  }
+
+  .leave-request {
+    height: 50px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .menu-image {
+    display: block;
+    margin-left: 15px;
+  }
+
+  .first-block {
+    margin: 10px 0 0 8px;
+  }
+
+  .canvas {
+    height: 300px;
+  }
+
+  .head-box {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .text-paragraph {
+    width: 80%;
+    padding: 10px;
+    background-color: #141414;
+    border-radius: 8px;
+  }
+
+  .question-title {
+    font-size: 18px;
+    margin: 20px 10px;
+  }
+
+  .question-text {
+    font-size: 12px;
+    margin: 20px 0 0 10px;
+  }
+
+  .head-video {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .answers {
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .second-block {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .second-block h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .stages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .one-item {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    border: 2px solid #008000;
+    display: inline-block;
+  }
+
+  .stages-grid {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .one-stage {
+    background-color: #141414;
+    font-size: 10px;
+    padding: 5px 10px;
+    box-shadow: 0px 0px 4px #00ff00;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    .one-stage-title {
+      font-size: 17px;
+      font-weight: 500;
+      color: #00ff00;
+    }
+
+    .one-stage-info {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }
+
+  .time {
+    font-size: 8px;
+    font-weight: 700;
+  }
+
+  .third-block {
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .third-block-container {
+    background-size: cover;
+    background-position: top;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left-choice,
+  .right-choice {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-choice-text,
+  .right-choice-text {
+    font-size: 14px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .red-rectangle,
+  .blue-rectangle {
+    width: 80px;
+    height: 80px;
+    filter: blur(10px);
+  }
+
+  .fourth-block {
+    height: auto;
+    width: 85%;
+    margin: 20px 0;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .fourth-block-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .fourth-block-examples {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one-example {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .example-info {
+    font-size: 14px;
+  }
+
+  .one-example button {
+    font-size: 12px;
+    width: 100%;
+    padding: 8px 0;
+  }
+
+  .main-example {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-example button {
+    font-size: 14px;
+  }
+
+  .one-example:first-child {
+    margin-left: -70%;
+    filter: blur(5px);
+  }
+
+  .one-example:last-child {
+    margin-right: -65%;
+    filter: blur(5px);
+  }
+
+  .fifth-block {
+    height: auto;
+    margin: 100px 0;
+    padding: 15px;
+  }
+
+  .form-container {
+    width: 90%;
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .form-container-info {
+      width: 300px;
+    }
+  }
+
+  .fifth-block-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #00ff00;
+  }
+
+  .field {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .field label {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .field input {
+    background-color: #333333;
+    height: 45px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    margin: 10px 0;
+    outline: none;
+    border-radius: 8px;
+  }
+
+  .field input.question {
+    height: 100px;
+  }
+
+  .send-button {
+    background-color: #ff0000;
+    border: 2px #ff0000 solid;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px #ff0000;
+    margin-top: 20px;
+    cursor: pointer;
+    transform: background-color 0.25s;
+  }
+
+  .send-button:hover {
+    background-color: #df0004;
+  }
+
+  .canvas2 {
+    height: 800px;
+    width: 100%;
+    z-index: -100;
+  }
+
+  .footer {
+    color: #ffffff;
+    width: 90%;
+    background-color: #171616;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+
+  .foot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .one-foot-item {
+    width: 90%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .one-foot-item h1 {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .one-foot-item p {
+    font-size: 16px;
+    font-weight: 800;
+    color: #00ff00;
+    text-align: center;
+  }
+
+  .links p,
+  .social p {
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 5px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .low-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #2f2f2f;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 15px;
+    text-align: center;
+  }
+}
